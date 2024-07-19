@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/lightblue_rounded"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/questionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#9e99d3"
+                android:gravity="center"
+                android:background="#c0bafc" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/questionContent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="What weapon do you prefer using in shooter games like Call of Duty - sniper rifles, shotguns, or assault rifles?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Dialog"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+    <TextView
+        android:id="@+id/topic_join_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/topic_join_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topic_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:scrollbars="vertical"/>
+</LinearLayout>

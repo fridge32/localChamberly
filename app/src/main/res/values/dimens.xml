@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">20sp</dimen>
+<!--size of each row considering the larger being 2 linears-->
+    <dimen name="feature_size">59.5sp</dimen>
+<!--size of each row consider all 1 liners-->
+    <dimen name="feature_size_large">53sp</dimen>
+</resources>

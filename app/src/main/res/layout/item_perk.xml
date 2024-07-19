@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@drawable/perk_cards"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/perk_image"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/perk_rainbow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="Rainbow Text" />
+
+    <TextView
+        android:id="@+id/perk_text"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Additional text here." />
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="180dp"
+        android:layout_height="12dp"
+        android:textSize="10sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="" />
+
+</LinearLayout>

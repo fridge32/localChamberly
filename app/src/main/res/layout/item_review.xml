@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <!-- Stars Image -->
+    <ImageView
+        android:id="@+id/review_stars"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/stars" />
+
+    <!-- Bold Text -->
+    <TextView
+        android:id="@+id/review_title"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Useful app for anonymous chatting"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <!-- Normal Text -->
+    <TextView
+        android:id="@+id/review_description"
+        android:layout_width="335dp"
+        android:layout_height="76dp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="It's a really nice app to chat anonymously with people around the world and it helps you vent out with people without getting judged by them."
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textSize="16sp"
+        android:textAlignment="center"/>
+
+    <!-- By Line -->
+    <TextView
+        android:id="@+id/review_author"
+        android:layout_width="335dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="By anshoool, 05/09/2024"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textSize="16sp"
+        android:textAlignment="center"/>
+
+</LinearLayout>

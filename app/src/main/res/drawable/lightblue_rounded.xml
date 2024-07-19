@@ -1,0 +1,6 @@
+<!-- res/drawable/lightblue_rounded.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#c0bafc"/> <!-- Background color -->
+    <corners android:radius="16dp"/> <!-- Corner radius -->
+    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp"/> <!-- Optional padding -->
+</shape>
