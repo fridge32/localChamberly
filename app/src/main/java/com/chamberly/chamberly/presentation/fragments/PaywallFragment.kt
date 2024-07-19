@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.chamberly.chamberly.R
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -31,6 +32,7 @@ import com.chamberly.chamberly.models.Feature
 import com.chamberly.chamberly.models.Review
 import androidx.navigation.fragment.findNavController
 import android.util.Log
+import androidx.constraintlayout.widget.ConstraintLayout
 
 
 class PaywallFragment : Fragment() {
@@ -123,6 +125,16 @@ class PaywallFragment : Fragment() {
 
         val advunlock2 = view.findViewById<TextView>(R.id.unlock_advanced2)
         applyGradientToText(advunlock2)
+
+//        val staticele = view.findViewById<ConstraintLayout>(R.id.static_bottom_element)
+//        val displayMetrics = resources.displayMetrics
+//        val deviceHeight = displayMetrics.heightPixels
+//        val staticHeight = (deviceHeight * 0.25).toInt()
+//        val layoutParams = ConstraintLayout.LayoutParams(
+//            ConstraintLayout.LayoutParams.MATCH_PARENT,
+//            staticHeight
+//        )
+//        staticele.layoutParams = layoutParams
 
         exitButton = view.findViewById(R.id.cross)
         exitButton.setOnClickListener {
