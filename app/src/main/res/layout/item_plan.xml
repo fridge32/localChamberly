@@ -1,89 +1,116 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<!--bestplan2-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="12dp">
+    android:paddingStart="12dp"
+    android:layout_gravity="center"
+    android:paddingTop="4dp"
+    android:paddingEnd="12dp"
 
 
-    <LinearLayout
-        android:id="@+id/ll_plan_container"
-        android:layout_width="165.5dp"
+    app:layout_constraintDimensionRatio="1:1"
+    android:clipToPadding="false"
+    >
+    <!-- app:layout_constraintDimensionRatio="1:1"-->
+    <!-- Existing ConstraintLayout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/plan_container"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/plan_cards"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="40">
 
         <TextView
             android:id="@+id/plan_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
             android:fontFamily="@font/sf_pro_display_bold"
-            android:layout_gravity="left"
-            android:letterSpacing="0.1"
-            android:layout_marginBottom="11dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft = "4dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.05"
             android:text="Plan Title"
+            android:textAllCaps="true"
             android:textColor="#000000"
-            android:textSize="12sp" />
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/plan_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft = "4dp"
             android:includeFontPadding="false"
+            android:layout_marginTop="11dp"
             android:fontFamily="@font/sf_pro_display_bold"
-            android:text="Price"
+            android:gravity="center"
+            android:text="360KR"
+            android:textAllCaps="true"
             android:textColor="#000000"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plan_title" />
 
         <TextView
             android:id="@+id/plan_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:layout_marginTop="8dp"
+            android:includeFontPadding="false"
             android:fontFamily="@font/sf_pro_display_bold"
-            android:text="Details"
-            android:layout_marginLeft = "4dp"
-            android:textColor="#000000"
-            android:textSize="12sp" />
-    </LinearLayout>
 
-    <LinearLayout
+
+            android:text="30 kr/month\nFree 7-days trial"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plan_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
         android:id="@+id/best_deal_badge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/best_deal_badge"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:visibility="visible">
+        android:layout_marginTop="6dp"
+        android:contentDescription="Best Deal"
+        android:src="@drawable/tag"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/plan_container"
+        app:layout_constraintStart_toStartOf="@+id/plan_container"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="@font/sf_pro_display_regular"
-            android:text="Best deal"
-            android:textColor="#000000"
-            android:textSize="15sp" />
-    </LinearLayout>
-
-    <!-- Sparkle Effect -->
     <ImageView
         android:id="@+id/sparkle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/best_deal_badge"
-        android:layout_toEndOf="@+id/best_deal_badge"
-        android:layout_marginStart="30dp"
-        android:contentDescription="Sparkle Image"
-        android:src="@drawable/sparkle"
-        android:visibility="visible"/>
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/best_deal_badge"
+        app:layout_constraintTop_toTopOf="@+id/best_deal_badge"
+        android:translationX="10dp"
+        android:translationY="-12dp"
+        app:srcCompat="@drawable/purplestar" />
 
-</RelativeLayout>
+
+    <!-- ImageView to be on top of everything -->
+</androidx.constraintlayout.widget.ConstraintLayout>

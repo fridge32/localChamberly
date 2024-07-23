@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.chamberly.chamberly.R
 import com.chamberly.chamberly.models.Plan
@@ -16,12 +17,12 @@ class PlanAdapter(private val plans: List<Plan>, private val onPlanSelected: (Pl
     private var selectedPosition = RecyclerView.NO_POSITION
 
     class PaywallViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val planContainer: LinearLayout = itemView.findViewById(R.id.ll_plan_container)
+        val planContainer: ConstraintLayout = itemView.findViewById(R.id.plan_container)
         val planTitle: TextView = itemView.findViewById(R.id.plan_title)
         val planPrice: TextView = itemView.findViewById(R.id.plan_price)
         val planDetails: TextView = itemView.findViewById(R.id.plan_details)
         val sparkle: ImageView = itemView.findViewById(R.id.sparkle)
-        val bestDealBadge: LinearLayout = itemView.findViewById(R.id.best_deal_badge)
+        val bestDealBadge: ImageView = itemView.findViewById(R.id.best_deal_badge)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PaywallViewHolder {
