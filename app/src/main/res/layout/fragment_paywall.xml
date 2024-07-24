@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:clipToPadding="false"
-        android:paddingBottom="232dp">
+        android:paddingBottom="160dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="18dp"
                 android:includeFontPadding="false"
                 android:fontFamily="@font/sf_pro_display_bold"
                 android:text="Unlock Happiness"
@@ -113,7 +113,7 @@
                 android:fontFamily="@font/sf_pro_display_regular"
                 android:text="Scroll to compare plans"
                 android:textColor="#2E2E5B"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="26dp"
                 android:textSize="17sp"
                 android:includeFontPadding="false"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -275,7 +275,7 @@
         android:layout_height="0dp"
         android:layout_gravity="bottom"
         android:background="@drawable/paywall_static_background"
-        android:padding="16dp"
+        android:padding="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline">
 
@@ -285,6 +285,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:includeFontPadding="false"
             android:fontFamily="@font/sf_pro_display_regular"
             android:text="3 day free trial, then\n39.00 kr per month. Cancel Anytime."
             android:textAlignment="center"
